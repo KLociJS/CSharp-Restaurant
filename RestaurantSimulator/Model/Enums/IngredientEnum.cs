@@ -1,4 +1,4 @@
-﻿namespace RestaurantSimulator.Model.IngredientEnums;
+﻿namespace RestaurantSimulator.Model.Enums;
 
 public enum IngredientEnum
 {
