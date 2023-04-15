@@ -1,3 +1,5 @@
-﻿namespace RestaurantSimulator.Model;
+﻿using RestaurantSimulator.Model.Enums;
 
-public record Ingredient(string Name);
+namespace RestaurantSimulator.Model;
+
+public record Ingredient(IngredientEnum IngredientEnum);

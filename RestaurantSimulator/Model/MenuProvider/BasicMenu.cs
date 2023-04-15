@@ -1,5 +1,6 @@
 ﻿using RestaurantSimulator.Model.ServeAble;
 using RestaurantSimulator.Model.BakeAble;
+using RestaurantSimulator.Model.Enums;
 using RestaurantSimulator.Model.PrepareAble;
 
 namespace RestaurantSimulator.Model.MenuProvider;
@@ -36,54 +37,54 @@ public class BasicMenu : IMenuProvider
         {
             new Pizza("Margherita Pizza", 3600, new List<Ingredient>()
             {
-                new Ingredient("tomato sauce"),
-                new Ingredient("mozzarella cheese"),
-                new Ingredient("fresh basil")
+                new Ingredient(IngredientEnum.TomatoSauce),
+                new Ingredient(IngredientEnum.MozzarellaCheese),
+                new Ingredient(IngredientEnum.FreshBasil)
             }),
             new Pizza("Pepperoni Pizza", 3600, new List<Ingredient>()
             {
-                new Ingredient("tomato sauce"),
-                new Ingredient("mozzarella cheese"),
-                new Ingredient("Pepperoni")
+                new Ingredient(IngredientEnum.TomatoSauce),
+                new Ingredient(IngredientEnum.MozzarellaCheese),
+                new Ingredient(IngredientEnum.Pepperoni)
             }),
             new Pizza("Hawaiian Pizza", 3600, new List<Ingredient>()
             {
-                new Ingredient("tomato sauce"),
-                new Ingredient("mozzarella cheese"),
-                new Ingredient("ham"),
-                new Ingredient("pineapple")
+                new Ingredient(IngredientEnum.TomatoSauce),
+                new Ingredient(IngredientEnum.MozzarellaCheese),
+                new Ingredient(IngredientEnum.Ham),
+                new Ingredient(IngredientEnum.Pineapple)
             }),
             new Pizza("Meat Lovers Pizza", 3600, new List<Ingredient>()
             {
-                new Ingredient("tomato sauce"),
-                new Ingredient("mozzarella cheese"),
-                new Ingredient("pepperoni"),
-                new Ingredient("sausage"),
-                new Ingredient("bacon"),
-                new Ingredient("ground beef")
+                new Ingredient(IngredientEnum.TomatoSauce),
+                new Ingredient(IngredientEnum.MozzarellaCheese),
+                new Ingredient(IngredientEnum.Pepperoni),
+                new Ingredient(IngredientEnum.Sausage),
+                new Ingredient(IngredientEnum.Bacon),
+                new Ingredient(IngredientEnum.GroundBeef)
             }),
             new Pizza("Veggie Pizza", 5600, new List<Ingredient>()
             {
-                new Ingredient("tomato sauce"),
-                new Ingredient("mozzarella cheese"),
-                new Ingredient("mushrooms"),
-                new Ingredient("green pepper"),
-                new Ingredient("onion"),
-                new Ingredient("olive")
+                new Ingredient(IngredientEnum.TomatoSauce),
+                new Ingredient(IngredientEnum.MozzarellaCheese),
+                new Ingredient(IngredientEnum.Mushrooms),
+                new Ingredient(IngredientEnum.GreenPepper),
+                new Ingredient(IngredientEnum.Onion),
+                new Ingredient(IngredientEnum.Olive)
             }),
             new Salad("Caesar Salad", 2000,new List<Ingredient>()
             {
-                new Ingredient("romaine lettuce"),
-                new Ingredient("croutons"),
-                new Ingredient("parmesan cheese"),
-                new Ingredient("Caesar dressing")
+                new Ingredient(IngredientEnum.RomaineLettuce),
+                new Ingredient(IngredientEnum.Crouton),
+                new Ingredient(IngredientEnum.ParmesanCheese),
+                new Ingredient(IngredientEnum.CaesarDressing)
             }),
             new Salad("Caprese Salad", 2000,new List<Ingredient>()
             {
-                new Ingredient("mozzarella cheese"),
-                new Ingredient("sliced tomatoes"),
-                new Ingredient("fresh basil"),
-                new Ingredient("balsamic glaze")
+                new Ingredient(IngredientEnum.MozzarellaCheese),
+                new Ingredient(IngredientEnum.SlicedTomatoes),
+                new Ingredient(IngredientEnum.FreshBasil),
+                new Ingredient(IngredientEnum.BalsamicGlaze)
             })
         };
         
