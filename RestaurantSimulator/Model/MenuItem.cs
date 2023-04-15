@@ -3,7 +3,7 @@
 public abstract class MenuItem
 {
     public string Name { get; init; }
-    public int Price { get; set; }
+    public int Price { get; init; }
 
     public MenuItem(string name, int price)
     {

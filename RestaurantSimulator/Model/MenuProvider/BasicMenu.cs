@@ -1,5 +1,5 @@
 ﻿using RestaurantSimulator.Model.ServeAble;
-using RestaurantSimulator.Model.BakeAble;
+using RestaurantSimulator.Model.PrepareAble;
 using RestaurantSimulator.Model.Enums;
 using RestaurantSimulator.Model.PrepareAble;
 
@@ -7,12 +7,14 @@ namespace RestaurantSimulator.Model.MenuProvider;
 
 public class BasicMenu : IMenuProvider
 {
-    public List<MenuItem> Meals { get; init; }
+    public List<Pizza> Pizzas { get; init; }
+    public List<Salad> Salads { get; init; }
     public List<MenuItem> Drinks { get; init; }
 
     public BasicMenu()
     {
-        Meals = GenerateMeals();
+        Pizzas = GeneratePizzas();
+        Salads = GenerateSalads();
         Drinks = GenerateDrinks();
     }
 
@@ -31,9 +33,9 @@ public class BasicMenu : IMenuProvider
         return menu;
     }
     
-    private List<MenuItem> GenerateMeals()
+    private List<Pizza> GeneratePizzas()
     {
-        var menu = new List<MenuItem>()
+        var menu = new List<Pizza>()
         {
             new Pizza("Margherita Pizza", 3600, new List<Ingredient>()
             {
@@ -72,6 +74,15 @@ public class BasicMenu : IMenuProvider
                 new Ingredient(IngredientEnum.Onion),
                 new Ingredient(IngredientEnum.Olive)
             }),
+        };
+        
+        return menu;
+    }
+    
+       private List<Salad> GenerateSalads()
+    {
+        var menu = new List<Salad>()
+        {
             new Salad("Caesar Salad", 2000,new List<Ingredient>()
             {
                 new Ingredient(IngredientEnum.RomaineLettuce),
