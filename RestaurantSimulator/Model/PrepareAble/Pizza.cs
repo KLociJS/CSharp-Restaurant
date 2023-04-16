@@ -1,6 +1,7 @@
 ﻿
 
 using System.Collections;
+using RestaurantSimulator.Model.Enums;
 
 namespace RestaurantSimulator.Model.PrepareAble;
 

@@ -13,7 +13,8 @@ public class BasicMenu : IMenuProvider
 
     public BasicMenu()
     {
-        Pizzas = GeneratePizzas();
+        Pizzas = new List<Pizza>();
+        // Pizzas = GeneratePizzas();
         Salads = GenerateSalads();
         Drinks = GenerateDrinks();
     }
